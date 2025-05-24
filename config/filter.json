@@ -1,0 +1,6 @@
+{
+  "allowed_categories": ["user", "admin", "security", "system", "application"],
+  "severity_levels": ["critical", "error", "warning", "info"],
+  "exclude_patterns": [".*test.*", ".*debug.*"],
+  "include_patterns": [".*security.*", ".*audit.*"]
+}
