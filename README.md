@@ -146,6 +146,54 @@ The system includes robust error handling:
 - Log rotation and size management
 - Detailed error logging
 
+## Docker Support
+
+The application is containerized using Docker. To run with Docker:
+
+```bash
+# Build and start the container
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop the container
+docker-compose down
+```
+
+### Docker Configuration Verification
+
+TODO: Verify the following Docker configurations:
+
+1. Volume Mounts:
+
+   - [ ] Verify config directory mount
+   - [ ] Verify logs directory mount
+   - [ ] Check permissions on mounted volumes
+
+2. Network Configuration:
+
+   - [ ] Verify log-network bridge creation
+   - [ ] Test TCP connectivity to target server
+   - [ ] Check container DNS resolution
+
+3. Health Checks:
+
+   - [ ] Verify health check endpoint
+   - [ ] Test automatic restart on failure
+   - [ ] Validate health check parameters
+
+4. Resource Limits:
+
+   - [ ] Set appropriate memory limits
+   - [ ] Configure CPU constraints
+   - [ ] Define restart policies
+
+5. Security:
+   - [ ] Verify non-root user execution
+   - [ ] Check file permissions
+   - [ ] Validate environment variables
+
 ## Contributing
 
 1. Fork the repository
