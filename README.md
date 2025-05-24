@@ -15,7 +15,7 @@ A robust log forwarding system that collects logs from various sources and forwa
 1. Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/darkling10/log-forwarder-etl.git
 cd log-forwarder
 ```
 
